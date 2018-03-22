@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Buget</title>
+     <link rel="stylesheet" href="bootstrap-4.0.0-beta.3-dist/css/bootstrap.min.css">
+
+</head>
+<style>
+body {
+	background-color: darksalmon;
+}
+</style>
+<br>
+<div class="container">
+	<div class="row">
+ <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link " id="home-tab" data-toggle="tab" href="index.html" role="tab" aria-controls="home" aria-selected="true"><b>Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " id="profile-tab" data-toggle="tab" href="profile.html" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" id="contact-tab" data-toggle="tab" href="ex.html" role="tab" aria-controls="contact" aria-selected="false">Expenses</b></a>
+  </li>
+</ul>
+
+	</div>
+
+<br>
+<body>
+<form>
+  <div class="form-row align-items-center">
+    <div class="col-sm-3">
+	<label for="Item" for="inlineFormInputGroupItem">Item</label>
+      <label class="sr-only" for="inlineFormItem">item</label>
+      <input type="text" class="form-control mb-2 mb-sm-0" id="inlineFormItem" placeholder="item name">
+    </div>
+    <div class="col-sm-3">
+      <label for="Amount" for="inlineFormAmount">Amount</label>
+      <div class="input-group mb-2 mb-sm-0">
+        <input type="number" class="form-control" id="inlineFormAmount" placeholder=".00">
+      </div>
+    </div>
+  </div><br>
+     <a href="#"><button type="button" class="btn btn-danger">save</button></a>
+	<a href="#"><button type="button" class="btn btn-success">cancel</button></a>
+</form>
+<br><br>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">list of ITEMS</th>
+      <th scope="col">Budgeted AMOUNT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>rollercoster</th>
+      <td>10</td>
+    </tr>
+
+  </tbody>
+</table>
+
+</div>
+</body>
+</html>

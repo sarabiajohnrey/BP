@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Buget</title>
+     <link rel="stylesheet" href="bootstrap-4.0.0-beta.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/nav.css">
+</head>
+
+<br>
+<body>
+<div class="topnav col-lg" id="myTopnav">
+<a href="index.html" >Home</a>
+<a href="profile.html" >Profile</a>
+  <a href="addex.html" class="active">Add Expenses</a>
+  <a href="listex.html">List of Expenses</a>
+  <a href="addcat.html">Add Category</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div><br><br><br><br><br><br>
+
+
+<form class="container" id="needs-validation" novalidate>
+  <div class="row">
+    <div class="col-md-12">
+      <label for="validationCustom01">Items</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="items"  required>
+    </div><br>
+    <div class="form-group col-md-12"><br>
+      <label for="category">Category</label>
+      <select class='form-control'>
+		<option value="foods">Foods</option>
+		<option value="bills">Bills</option>
+		<option value="allowance">Allowance</option>
+     </select>
+    </div>
+  </div>
+  <div class="row"><br>
+    <div class="col-md-12">
+      <label for="validationCustom03">Date</label>
+      <input type="date" class="form-control" id="validationCustom03"  required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div><br>
+    <div class="col-md-12"><br>
+      <label for="validationCustom04">Amount</label>
+      <input type="number" class="form-control" id="validationCustom04" placeholder=".00 Php" required>
+      <div class="invalid-feedback">
+        Please provide a valid state.
+      </div>
+    </div><br>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div>
+  </div><br>
+  <button class="btn btn-primary" type="save">save</button>
+  <button class="btn btn-danger" type="cancel">cancel</button>
+</form>
+<br><br>
+
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>

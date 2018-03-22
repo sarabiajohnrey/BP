@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Buget</title>
+     <link rel="stylesheet" href="bootstrap-4.0.0-beta.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/nav.css">
+</head>
+
+<br>
+<body>
+<div class="topnav col-lg" id="myTopnav">
+<a href="index.html" >Home</a>
+<a href="profile.html">Profile</a>
+  <a href="addex.html">Add Expenses</a>
+  <a href="listex.html" class="active">List of Expenses</a>
+  <a href="addcat.html">Add Category</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div><br><br><br><br><br><br>
+
+
+<div class="container">
+ <div class="row">
+<h3>List of Expenses</h3><br>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">list of ITEMS</th>
+      <th scope="col">Rate</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Update</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rollercoster</td>
+      <td>10</td>
+      <td>12</td>
+      <td>10</td>
+    </tr>
+
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
+  <ol class="breadcrumb">
+   <h4>Report/Summary</h4></lo>
+
+    <table class="table table-striped">
+  <tbody>
+    <tr>
+      <th scope="row">Items</td>
+      <th scope="row">Category</td>
+      <th scope="row">Date</td>
+       <th scope="row">Amount</td>
+    </tr>
+    <tr>
+      <td>Electrical Bill</td>
+      <td>Bills</td>
+      <td>March 20,2018</td>
+      <td>590.00 Php</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>

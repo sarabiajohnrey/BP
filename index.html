@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Buget</title>
+     <link rel="stylesheet" href="bootstrap-4.0.0-beta.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<br>
+<body>
+<div class="topnav col-lg" id="myTopnav">
+<a href="index.html" class="active">Home</a>
+<a href="profile.html">Profile</a>
+  <a href="addex.html">Add Expenses</a>
+  <a href="listex.html">List of Expenses</a>
+  <a href="addcat.html">Add Category</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<br><br><br>
+<center>
+<img src="images/Bud.png" width="500" height="400">
+<h1>BUDGET PLANNER</h1>
+<a href="profile.html" class="btn btn-warning">plan now</a>
+</center>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>
