@@ -15,6 +15,7 @@
   <a href="addex.html">Add Expenses</a>
   <a href="listex.html">List of Expenses</a>
   <a href="addcat.html" class="active">Add Category</a>
+  <a href="categlist.html">CategoryList</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div><br><br><br>
 
@@ -23,20 +24,13 @@
 <form class="container" id="needs-validation" novalidate>
   <div class="row">
     <div class="form-group col-md-12"><br>
-      <label for="category">Category</label>
-      <select class='form-control'>
-		<option value="foods">Foods</option>
-		<option value="bills">Bills</option>
-		<option value="allowance">Allowance</option>
-     </select>
-    </div>
-    <div class="col-md-12"><br>
-      <label for="validationCustom04">Amount</label>
-      <input type="number" class="form-control" id="validationCustom04" placeholder=".00 Php" required>
+      <label for="validationCustom04">Add Category</label>
+      <input type="text" class="form-control" id="validationCustom04" placeholder="category" required>
       <div class="invalid-feedback">
         Please provide a valid state.
       </div>
-    </div><br>
+    </div>
+    <br>
       <div class="invalid-feedback">
         Please provide a valid zip.
       </div>
@@ -45,49 +39,5 @@
   <button class="btn btn-primary" type="save">save</button>
   <button class="btn btn-danger" type="cancel">cancel</button>
 </form>
-<br><br><br>
-
-<ol class="breadcrumb">
-   <h5>List of CATEGORIES</h5>
-  </ol>
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th scope="col">list of CATEGORIES</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Foods<button type="button" class="close" aria-label="Close">
-  <span aria-hidden="true">&times;</span>
-</button></th>
-    </tr>
-    <tr>
-      <th>Bills<button type="button" class="close" aria-label="Close">
-  <span aria-hidden="true">&times;</span>
-</button></th>
-    </tr>
-   <tr>
-      <th>Allowance<button type="button" class="close" aria-label="Close">
-  <span aria-hidden="true">&times;</span>
-</button></th>
-    </tr>
-  </tbody>
-</table>
-
-</div>
-</div>
-
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script>
-
 </body>
 </html>
