@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Buget</title>
+     <link rel="stylesheet" href="bootstrap-4.0.0-beta.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/nav.css">
+</head>
+<br>
+<body>
+
+<div class="topnav col-lg" id="myTopnav">
+<a href="index.html" >Home</a>
+<a href="profile.html">Profile</a>
+  <a href="addex.html">Add Expenses</a>
+  <a href="listex.html">List of Expenses</a>
+  <a href="addcat.html" >Add Category</a>
+  <a href="categlist.html" class="active">CategoryList</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div><br><br><br>
+<br><br><br>
+
+<div class="container">
+<ol class="breadcrumb">
+   <h5>List of CATEGORIES</h5>
+  </ol>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">list of CATEGORIES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Foods<button type="button" class="close" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button></th>
+    </tr>
+    <tr>
+      <th>Bills<button type="button" class="close" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button></th>
+    </tr>
+   <tr>
+      <th>Allowance<button type="button" class="close" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button></th>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>
